@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 """ 
-    A general tool for converting data from the
+    A general tool for converting data from ther
     dictionary format to an (n x k) python list that's 
     ready for training an sklearn algorithm
 
@@ -67,7 +67,7 @@ def featureFormat( dictionary, features, remove_NaN=True, remove_all_zeroes=True
             try:
                 dictionary[key][feature]
             except KeyError:
-                print "error: key ", feature, " not present"
+                print("error: key ", feature, " not present")
                 return
             value = dictionary[key][feature]
             if value=="NaN" and remove_NaN:
